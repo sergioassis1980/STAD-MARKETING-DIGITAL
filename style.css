@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2? family= Justo & family= Sarala:wght@700 & display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-size: 100%;
+  background: #3b0237;
+  height: 100vh;
+}  
+
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px;  
+}
+
+.cabecalho-imagem {
+  height: 72px;  
+}
+
+.cabecalho-menu {
+  display: flex;
+  gap: 32px;  
+}
+
+.cabecalho-menu-item {
+  font-family: 'Sarala', sans-serif;
+  color: #FFF2E7;
+  font-weight: 700;
+  font-size: 27px;
+}
+
+.conteudo {
+  margin-bottom: 48px;
+  border-top: 14px solid #FFF2E7;
+}
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 25px;
+  height: 50vh;
+}
+
+.conteudo-principal-escrito {
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+}
+
+.conteudo-principal-escrito-titulo {
+  font-family: 'Georgia', sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  color: #FFF2E7;
+}
+
+.conteudo-principal-escrito-subtitulo {
+  font-family: 'Sarala', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #ECD6C4;
+}
+
+.conteudo-principal-escrito-botao {
+  background-color: #ECD6C4;
+  width: 180px;
+  height: 67px;
+  border: none;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-family: 'Sarala', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #2F2325;
+}
+
+.conteudo-principal-escrito-botao:hover {
+  background-color: rgba(236, 214, 196, 0.53);
+}
+
+.conteudo-principal-imagem {
+  height: 250px;
+}
+
+.conteudo-secundario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.conteudo-secundario-titulo {
+  border-top: 7px solid #FFF2E7;
+  padding-top: 48px;
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 24px;
+  color: #FFF2E7;
+  margin-bottom: 16px;
+}
+
+.conteudo-secundario-paragrafo {
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ECD6C4;
+}
+
+.rodape {
+  padding: 32px;
+  border-top: 7px solid #FFF2E7;
+}
+
+.rodape-imagem {
+  height: 48px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  /* Adicione as regras CSS que você deseja aplicar a telas menores que 768px aqui */
+  .cabecalho {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .cabecalho-imagem {
+    height: 48px;
+    margin-bottom: 24px;
+  }
+  .cabecalho-menu {
+    display: none;
+  }
+  .conteudo-principal {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    height: 50vh;
+  }
+  .conteudo-principal-imagem {
+    height: 200px;
+  }
+  .conteudo-principal-escrito-titulo {
+    font-size: 48px;
+  }
+  .conteudo-principal-escrito-subtitulo {
+    font-size: 24px;
+  }
+  .conteudo-principal-escrito-botao {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+  }
+  .conteudo-secundario {
+    margin-top: 24px;
+  }
+  .conteudo-secundario-titulo {
+    padding-top: 24px;
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .conteudo-secundario-paragrafo {
+    font-size: 16px;
+  }
+  .rodape {
+    padding: 24px;
+  }
+  .rodape-imagem {
+    height: 36px;
+  }
+}
